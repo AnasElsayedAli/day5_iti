@@ -1,0 +1,20 @@
+<div class="user-container">
+@for(user of users; track user.id){
+<div class="user-card">
+  <div class="user-avatar">
+    <img src={{user.image}} alt="User Avatar" />
+  </div>
+  <div class="user-info">
+    <p class="{{ 'user-role-' + user.role }}">
+        {{ user.role }}
+    </p>
+    <h2 class="user-name">{{user.firstName}} {{user.lastName}}</h2>
+    <p class="user-email">{{user.phone}}</p>
+    <p class="user-email">{{user.email}}</p>
+    <p class="user-email">{{user.address.country}}</p>
+  </div>
+  <div class="user-actions">
+  </div>
+</div>
+}
+</div>

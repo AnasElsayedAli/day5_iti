@@ -1,0 +1,39 @@
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: #f9fafb; /* light background */
+      color: #111827;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 600;
+      color: lightslategray; /* modern blue accent */
+    }
+
+    .navbar input {
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      outline: none;
+      font-size: 14px;
+      width: 220px;
+      transition: all 0.2s ease;
+    }
+
+    .navbar input:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    }
