@@ -37,3 +37,21 @@
       border-color: #2563eb;
       box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
     }
+.nav-options {
+  display: flex;
+  gap: 25px;                       
+}
+
+.option {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #4b5563;
+  cursor: pointer;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  padding-bottom: 4px;
+}
+.option:hover {
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+}

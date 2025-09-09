@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-user-card',
   imports: [],
@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './user-card.css'
 })
 export class UserCard {
-users =[
+  role !:string ;
+  constructor(public router:Router){
+    this.role = this.router.url.split('/')[1]
+  }
+  users =[
   {
     "id": 1,
     "firstName": "Emily",
@@ -1838,7 +1842,7 @@ users =[
     },
     "role": "user"
   }
-]
+  ]
 
 
 }

@@ -5,7 +5,7 @@ import { Body } from './body/body';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Navbar,Body],
+  imports: [RouterOutlet,Navbar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
